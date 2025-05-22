@@ -1,124 +1,85 @@
 # HALA Desktop Starter Kit 🖥️
 
-This is a **layer-based Flutter desktop app starter kit** built to serve as a foundation for scalable and modular applications.
+A **layer-based Flutter desktop app starter kit** built as a foundation for scalable, modular desktop applications.
 
 ---
 
 ## ✅ Architecture Overview
 
-The project follows a clean, layered architecture:
-
-```
+This project follows a clean, layered architecture:
 
 lib/
-├── presentation/      # UI: widgets, screens, themes, viewmodels
-├── application/       # Business logic: use cases, services, commands
-├── domain/            # Core domain: entities, value objects, interfaces
-├── infrastructure/    # Data layer: APIs, DB, local storage
-├── core/              # Shared utils: constants, logging, errors, extensions
-└── main.dart          # Entry point: sets up DI, routing, theming
+├── presentation/ # UI: widgets, screens, themes, viewmodels
+├── application/ # Business logic: use cases, services, commands
+├── domain/ # Core domain: entities, value objects, interfaces
+├── infrastructure/ # Data layer: APIs, DB, local storage
+├── core/ # Shared utils: constants, logging, errors, extensions
+└── main.dart # Entry point: sets up DI, routing, theming
 
-````
+yaml
+Copy
+Edit
 
 ---
 
 ## 🧩 Key Features
 
-- 🧱 **Layered architecture** (separation of concerns)
-- 🎨 **Material UI compatible**
-- 🖥️ **Ready for Windows, macOS, and Linux**
-- 📦 Useful packages:
-  - `flutter_hooks`
-  - `adaptive_theme`
-  - `responsive_builder`
+- 🧱 **Layered architecture** with clear separation of concerns
+- 🎨 **Material UI compatible and themeable**
+- 🖥️ **Supports Windows, macOS, and Linux**
+- 📦 Useful pre-integrated packages:
+  - [`flutter_hooks`](https://pub.dev/packages/flutter_hooks)
+  - [`adaptive_theme`](https://pub.dev/packages/adaptive_theme)
+  - [`responsive_builder`](https://pub.dev/packages/responsive_builder)
 
 ---
 
 ## 🚀 Getting Started
 
-1. Clone the repo:
+1. **Clone the repo:**
+
    ```bash
    git clone https://github.com/your-username/hala_desktop.git
    cd hala_desktop
-````
+Install dependencies:
 
-2. Get dependencies:
+bash
+Copy
+Edit
+flutter pub get
+Run the app (example: Windows):
 
-   ```bash
-   flutter pub get
-   ```
+bash
+Copy
+Edit
+flutter run -d windows
+🛠️ Folder Breakdown
+presentation/
+Screens, widgets, themes, and viewmodels
 
-3. Run on desktop:
+Handles user interaction and state display
 
-   ```bash
-   flutter run -d windows
-   ```
+application/
+Use cases and services
 
----
+Connects UI with business logic
 
-## 🛠️ Folder Details
+domain/
+Pure business rules and logic
 
-### `presentation/`
+Contains entities, value objects, and abstract repositories
 
-* Screens, widgets, viewmodels, and themes
-* Reacts to state changes and user interaction
+infrastructure/
+Implements repositories, API clients, and local persistence
 
-### `application/`
+Bridges domain and external systems
 
-* Contains use cases and business services
-* Bridges the UI and domain logic
+core/
+Global utilities, error handling, constants, and extensions
 
-### `domain/`
+🤝 Contributing
+Contributions are welcome!
+Feel free to fork the repo, make changes, and submit a pull request.
 
-* Pure Dart logic: entities, value objects, and repositories (abstract)
-* Reusable and independent from any framework
-
-### `infrastructure/`
-
-* Implements repository interfaces
-* Handles APIs, DBs, local storage, etc.
-
-### `core/`
-
-* Shared code like constants, logging, utilities, and extensions
-
----
-
-## 🤝 Contributing
-
-Feel free to fork and contribute! PRs are welcome.
-
----
-
-## 📄 License
-
-MIT
-
-````
-
----
-
-### ✅ Step 2: **Save the file**
-
-Make sure you save your changes in `README.md`.
-
----
-
-### ✅ Step 3: **Commit the changes**
-
-In your terminal:
-
-```bash
-git add README.md
-git commit -m "Update README with architecture and setup info"
-````
-
----
-
-### ✅ Step 4: **Push to GitHub**
-
-```bash
-git push origin main
-```
-
----
+📄 License
+This project is licensed under the MIT License.
