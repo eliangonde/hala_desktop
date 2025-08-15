@@ -91,6 +91,7 @@ class AuthService {
     }
 
     await _tokenStorage.deleteToken();
+    
   }
 
   Dio get dio => _dio;

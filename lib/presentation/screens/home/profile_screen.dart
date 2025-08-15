@@ -1,15 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:hala_desktop/core/utils/logout_util.dart';
 import 'package:hala_desktop/presentation/blocs/auth_bloc.dart';
-import 'package:hala_desktop/presentation/blocs/auth_event.dart';
 import 'package:hala_desktop/presentation/blocs/auth_state.dart';
 
 class ProfileScreen extends StatelessWidget {
   const ProfileScreen({super.key});
 
-  void _logout(BuildContext context) {
-    context.read<AuthBloc>().add(LogoutRequested());
-  }
+
 
   @override
   Widget build(BuildContext context) {
@@ -19,7 +17,7 @@ class ProfileScreen extends StatelessWidget {
         actions: [
           IconButton(
             icon: const Icon(Icons.logout),
-            onPressed: () => _logout(context),
+            onPressed: () => logout(context),
             tooltip: 'Logout',
           ),
         ],

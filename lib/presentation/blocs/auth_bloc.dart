@@ -1,5 +1,7 @@
+import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:hala_desktop/application/services/auth_service.dart';
+import 'package:path/path.dart';
 import 'auth_event.dart';
 import 'auth_state.dart';
 

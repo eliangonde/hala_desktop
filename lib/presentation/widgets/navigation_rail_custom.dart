@@ -1,4 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:hala_desktop/core/utils/logout_util.dart';
+import 'package:hala_desktop/presentation/blocs/auth_bloc.dart';
+import 'package:hala_desktop/presentation/blocs/auth_event.dart';
 // Make sure this path is correct
 
 enum NavigationDisplayMode { iconsAndLabels, iconsOnly, labelsOnly }
@@ -60,8 +64,6 @@ class _NavigationRailCustomState extends State<NavigationRailCustom> {
         return 70;
     }
   }
-
-  Future<void> _logout(BuildContext context) async {}
 
   @override
   Widget build(BuildContext context) {
@@ -157,7 +159,7 @@ class _NavigationRailCustomState extends State<NavigationRailCustom> {
                   padding: const EdgeInsets.all(8.0),
                   child: InkWell(
                     borderRadius: BorderRadius.circular(8),
-                    onTap: () => _logout(context),
+                    onTap: () => logout(context),
                     child: Container(
                       padding: EdgeInsets.symmetric(
                         vertical: 12,
